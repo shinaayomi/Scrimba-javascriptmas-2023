@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mountains of Christmas", serif;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px red, -2px -2px 1px black;
+  color: blanchedalmond;
+  background: url("https://cdn.pixabay.com/photo/2021/11/09/15/32/christmas-6781762_1280.jpg")
+    no-repeat center center;
+  background-size: cover;
+}
+
+.wishlist {
+  width: 300px;
+  border: 10px dotted blanchedalmond;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wishlist-item {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bolder;
+  font-size: 22px;
+  list-style-type: square;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wishlist-item:nth-child(odd) {
+  background-color: red;
+}
+
+.wishlist-item:nth-child(even) {
+  background-color: green;
+}
