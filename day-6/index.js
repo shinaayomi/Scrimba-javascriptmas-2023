@@ -27,6 +27,26 @@ function generateSecretSantaPairs(arr) {
   }
   console.log(pairs);
   return pairs;
+
+  // Shuffle array
+  //   for (let i = arr.length - 1; i > 0; i--) {
+  //     let j = Math.floor(Math.random() * (i + 1));
+  //     [arr[i], arr[j]] = [arr[j], arr[i]];
+  // }
+
+  // let pairs = {};
+
+  // // Circular assignment
+  // for(let i = 0; i < arr.length; i++) {
+  //     if(i === arr.length - 1) {
+  //         pairs[arr[i]] = arr[0];
+  //     } else {
+  //         pairs[arr[i]] = arr[i + 1];
+  //     }
+  // }
+
+  // console.log(pairs);
+  // return pairs;
 }
 
 console.log(generateSecretSantaPairs(people));
