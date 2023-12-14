@@ -1,0 +1,41 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #fff;
+  --red: #ff0002;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.flag-swiss {
+  position: relative;
+  width: 70vw;
+  aspect-ratio: 1/1;
+  background: var(--red);
+}
+
+.cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--white);
+}
+
+.cross1 {
+  width: 70%;
+  height: 20%;
+}
+
+.cross2 {
+  width: 20%;
+  height: 70%;
+}
