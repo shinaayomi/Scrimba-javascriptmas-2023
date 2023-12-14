@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 13: 🦃 Christmas Dinner Calculator</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <h1>Christmas Dinner Calculator</h1>
+
+    <div class="container" id="form-container">
+      <p class="result" id="result">
+        Your ideal Christmas dinner is <span id="food">...</span>
+      </p>
+      <form>
+        <label for="name">How many guests are coming?</label>
+        <input type="number" id="guests" name="guests" />
+        <div class="veggie">
+          <input
+            type="checkbox"
+            id="vegetarian-input"
+            name="vegetarian"
+            checked
+          />
+          <label for="name">Vegetarian?</label>
+        </div>
+        <button id="btn" type="button">Calculate</button>
+        <button id="btn-desc" type="button" class="hidden">
+          View Description
+        </button>
+      </form>
+    </div>
+
+    <div id="modalcontainer" class="modal">
+      <img class="modalimg" id="modal-img" />
+      <div id="caption" class="caption-txt"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
