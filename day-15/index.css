@@ -1,0 +1,41 @@
+:root {
+  --black: #282828;
+  --blue: #2892f9;
+  --red: #fb2f27;
+  --yellow: #fdfe29;
+}
+
+.rings {
+  display: grid;
+  place-items: center;
+  min-height: 100%;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.ring {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.bullseye {
+  background: var(--yellow);
+  width: 50%;
+}
+
+.ring-3 {
+  background: var(--red);
+  width: 60%;
+}
+
+.ring-2 {
+  background: var(--blue);
+  width: 70%;
+}
+
+.ring-1 {
+  background: var(--black);
+  width: 80%;
+}
