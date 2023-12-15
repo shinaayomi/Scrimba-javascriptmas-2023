@@ -1,0 +1,18 @@
+const elf = document.getElementById("elf");
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", duplicateElf);
+
+function duplicateElf() {
+  /** Challenge:
+    - Write a function to duplicate the elf when the button is clicked.
+    - See index.css for optional styling challenges.
+  **/
+  const clone = elf.lastChild.cloneNode(true);
+  elf.appendChild(clone);
+}
+
+/** Stretch goals:
+  - Write a function to give the elves some tools, or a cup of tea!
+  - Limit the total number of elves to 100.
+**/
