@@ -22,7 +22,7 @@ const sorteesArr = [
   },
 ];
 
-btn.addEventListener("click", sort);
+btn.addEventListener("click", sort, { once: true });
 
 function sort() {
   sorteesArr.sort().filter((item) => {
